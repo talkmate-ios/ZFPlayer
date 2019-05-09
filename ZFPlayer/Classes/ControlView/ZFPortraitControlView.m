@@ -240,7 +240,7 @@
 }
 
 - (void)showControlView {
-    self.topToolView.alpha           = 1;
+    self.topToolView.alpha           = 0;
     self.bottomToolView.alpha        = 1;
     self.isShow                      = YES;
     self.topToolView.zf_y            = 0;

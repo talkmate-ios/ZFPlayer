@@ -239,7 +239,7 @@
     self.backgroundColor             = [UIColor clearColor];
     self.playOrPauseBtn.selected     = YES;
     self.titleLabel.text             = @"";
-    self.topToolView.alpha           = 1;
+    self.topToolView.alpha           = 0;
     self.bottomToolView.alpha        = 1;
     self.isShow                      = NO;
 }
@@ -260,7 +260,7 @@
         self.topToolView.alpha       = 0;
         self.bottomToolView.alpha    = 0;
     } else {
-        self.topToolView.alpha       = 1;
+        self.topToolView.alpha       = 0;
         self.bottomToolView.alpha    = 1;
     }
 }
