@@ -358,8 +358,8 @@
         _slider.delegate = self;
         _slider.maximumTrackTintColor = [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:0.8];
         _slider.bufferTrackTintColor  = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.5];
-        _slider.minimumTrackTintColor = [UIColor whiteColor];
-        [_slider setThumbImage:ZFPlayer_Image(@"ZFPlayer_slider") forState:UIControlStateNormal];
+        _slider.minimumTrackTintColor = [UIColor colorWithRed:42.0f/255.0f green:159.0f/255.0f blue:228.0f/255.0f alpha:1];
+        [_slider setThumbImage:ZFPlayer_Image(@"ZFPlayer_slider2") forState:UIControlStateNormal];
         _slider.sliderHeight = 2;
     }
     return _slider;
@@ -378,7 +378,7 @@
 - (UIButton *)fullScreenBtn {
     if (!_fullScreenBtn) {
         _fullScreenBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_fullScreenBtn setImage:ZFPlayer_Image(@"ZFPlayer_fullscreen") forState:UIControlStateNormal];
+        [_fullScreenBtn setImage:[UIImage imageNamed:@"ZFPlayer_fullscreen"] forState:UIControlStateNormal];
     }
     return _fullScreenBtn;
 }

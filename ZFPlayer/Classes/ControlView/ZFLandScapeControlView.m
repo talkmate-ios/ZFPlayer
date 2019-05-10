@@ -376,7 +376,7 @@
 - (UIButton *)backBtn {
     if (!_backBtn) {
         _backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_backBtn setImage:ZFPlayer_Image(@"ZFPlayer_back_full") forState:UIControlStateNormal];
+        [_backBtn setImage:ZFPlayer_Image(@"ZFPlayer_back_full2") forState:UIControlStateNormal];
     }
     return _backBtn;
 }
@@ -402,8 +402,8 @@
 - (UIButton *)playOrPauseBtn {
     if (!_playOrPauseBtn) {
         _playOrPauseBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_playOrPauseBtn setImage:ZFPlayer_Image(@"ZFPlayer_play") forState:UIControlStateNormal];
-        [_playOrPauseBtn setImage:ZFPlayer_Image(@"ZFPlayer_pause") forState:UIControlStateSelected];
+        [_playOrPauseBtn setImage:ZFPlayer_Image(@"ZFPlayer_play2") forState:UIControlStateNormal];
+        [_playOrPauseBtn setImage:ZFPlayer_Image(@"ZFPlayer_pause2") forState:UIControlStateSelected];
     }
     return _playOrPauseBtn;
 }
@@ -424,8 +424,8 @@
         _slider.delegate = self;
         _slider.maximumTrackTintColor = [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:0.8];
         _slider.bufferTrackTintColor  = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.5];
-        _slider.minimumTrackTintColor = [UIColor whiteColor];
-        [_slider setThumbImage:ZFPlayer_Image(@"ZFPlayer_slider") forState:UIControlStateNormal];
+        _slider.minimumTrackTintColor = [UIColor colorWithRed:42.0f/255.0f green:159.0f/255.0f blue:228.0f/255.0f alpha:1];
+        [_slider setThumbImage:ZFPlayer_Image(@"ZFPlayer_slider2") forState:UIControlStateNormal];
         _slider.sliderHeight = 2;
     }
     return _slider;

@@ -722,7 +722,7 @@
     if (!_fastProgressView) {
         _fastProgressView = [[ZFSliderView alloc] init];
         _fastProgressView.maximumTrackTintColor = [[UIColor lightGrayColor] colorWithAlphaComponent:0.4];
-        _fastProgressView.minimumTrackTintColor = [UIColor whiteColor];
+        _fastProgressView.minimumTrackTintColor = [UIColor colorWithRed:42.0f/255.0f green:159.0f/255.0f blue:228.0f/255.0f alpha:1];
         _fastProgressView.sliderHeight = 2;
         _fastProgressView.isHideSliderBlock = NO;
     }
@@ -746,7 +746,7 @@
     if (!_bottomPgrogress) {
         _bottomPgrogress = [[ZFSliderView alloc] init];
         _bottomPgrogress.maximumTrackTintColor = [UIColor clearColor];
-        _bottomPgrogress.minimumTrackTintColor = [UIColor whiteColor];
+        _bottomPgrogress.minimumTrackTintColor = [UIColor colorWithRed:42.0f/255.0f green:159.0f/255.0f blue:228.0f/255.0f alpha:1];
         _bottomPgrogress.bufferTrackTintColor  = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.5];
         _bottomPgrogress.sliderHeight = 1;
         _bottomPgrogress.isHideSliderBlock = NO;
