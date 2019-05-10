@@ -378,7 +378,7 @@
 - (UIButton *)fullScreenBtn {
     if (!_fullScreenBtn) {
         _fullScreenBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_fullScreenBtn setImage:[UIImage imageNamed:@"ZFPlayer_fullscreen"] forState:UIControlStateNormal];
+        [_fullScreenBtn setImage:ZFPlayer_Image(@"ZFPlayer_fullscreen2") forState:UIControlStateNormal];
     }
     return _fullScreenBtn;
 }
