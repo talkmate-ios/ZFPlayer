@@ -367,8 +367,8 @@
 - (UIView *)topToolView {
     if (!_topToolView) {
         _topToolView = [[UIView alloc] init];
-//        UIImage *image = ZFPlayer_Image(@"ZFPlayer_top_shadow");
-//        _topToolView.layer.contents = (id)image.CGImage;
+        UIImage *image = ZFPlayer_Image(@"ZFPlayer_top_shadow");
+        _topToolView.layer.contents = (id)image.CGImage;
     }
     return _topToolView;
 }
