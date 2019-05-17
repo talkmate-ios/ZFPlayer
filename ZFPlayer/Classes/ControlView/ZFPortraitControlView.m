@@ -309,7 +309,7 @@
 - (UIView *)topToolView {
     if (!_topToolView) {
         _topToolView = [[UIView alloc] init];
-        UIImage *image = ZFPlayer_Image(@"ZFPlayer_top_shadow");
+        UIImage *image = ZFPlayer_Image(@"ZFPlayer_top_shadow2");
         _topToolView.layer.contents = (id)image.CGImage;
     }
     return _topToolView;
@@ -327,7 +327,7 @@
 - (UIView *)bottomToolView {
     if (!_bottomToolView) {
         _bottomToolView = [[UIView alloc] init];
-        UIImage *image = ZFPlayer_Image(@"ZFPlayer_bottom_shadow");
+        UIImage *image = ZFPlayer_Image(@"ZFPlayer_bottom_shadow2");
         _bottomToolView.layer.contents = (id)image.CGImage;
     }
     return _bottomToolView;

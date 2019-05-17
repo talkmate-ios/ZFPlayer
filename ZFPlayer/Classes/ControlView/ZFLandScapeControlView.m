@@ -367,7 +367,7 @@
 - (UIView *)topToolView {
     if (!_topToolView) {
         _topToolView = [[UIView alloc] init];
-        UIImage *image = ZFPlayer_Image(@"ZFPlayer_top_shadow");
+        UIImage *image = ZFPlayer_Image(@"ZFPlayer_top_shadow2");
         _topToolView.layer.contents = (id)image.CGImage;
     }
     return _topToolView;
@@ -385,7 +385,7 @@
     if (!_titleLabel) {
         _titleLabel = [[UILabel alloc] init];
         _titleLabel.textColor = [UIColor whiteColor];
-        _titleLabel.font = [UIFont systemFontOfSize:15.0];
+        _titleLabel.font = [UIFont fontWithName:@"PingFangSC-Medium"size:19.f];
     }
     return _titleLabel;
 }
@@ -393,7 +393,7 @@
 - (UIView *)bottomToolView {
     if (!_bottomToolView) {
         _bottomToolView = [[UIView alloc] init];
-        UIImage *image = ZFPlayer_Image(@"ZFPlayer_bottom_shadow");
+        UIImage *image = ZFPlayer_Image(@"ZFPlayer_bottom_shadow2");
         _bottomToolView.layer.contents = (id)image.CGImage;
     }
     return _bottomToolView;
