@@ -143,7 +143,7 @@
 - (UIButton *)playBtn {
     if (!_playBtn) {
         _playBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_playBtn setImage:[UIImage imageNamed:@"new_allPlay_44x44_"] forState:UIControlStateNormal];
+        [_playBtn setImage:[UIImage imageNamed:@"new_allPlay_44x44_2"] forState:UIControlStateNormal];
     }
     return _playBtn;
 }
