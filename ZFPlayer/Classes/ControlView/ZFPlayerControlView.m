@@ -758,7 +758,7 @@
     if (!_coverImageView) {
         _coverImageView = [[UIImageView alloc] init];
         _coverImageView.userInteractionEnabled = YES;
-        _coverImageView.contentMode = UIViewContentModeScaleAspectFill;
+        _coverImageView.contentMode = UIViewContentModeScaleToFill;
     }
     return _coverImageView;
 }
